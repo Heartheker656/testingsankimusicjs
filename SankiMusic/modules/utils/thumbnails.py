@@ -150,7 +150,7 @@ async def gen_thumb(videoid):
         return YOUTUBE_IMG_URL
 
 
-async def gen_qthumb(videoid):
+async def que_thumb(videoid):
     try:
         if os.path.isfile(f"cache/q{videoid}.jpg"):
             return f"cache/q{videoid}.jpg"
