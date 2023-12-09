@@ -85,7 +85,7 @@ async def gen_thumb(videoid):
             background = enhancer.enhance(0.6)
             image2 = background
                                                                                             
-            circle = Image.open("AarohiX/assets/circle.png")
+            circle = Image.open("SankiMusic/resource/circle.png")
 
             # changing circle color
             im = circle
@@ -117,14 +117,14 @@ async def gen_thumb(videoid):
             image2.paste(circle, (0,0), mask = circle)
 
             # fonts
-            font1 = ImageFont.truetype('AarohiX/assets/font.ttf', 30)
-            font2 = ImageFont.truetype('AarohiX/assets/font2.ttf', 70)
-            font3 = ImageFont.truetype('AarohiX/assets/font2.ttf', 40)
-            font4 = ImageFont.truetype('AarohiX/assets/font2.ttf', 35)
+            font1 = ImageFont.truetype('SankiMusic/resource/font.ttf', 30)
+            font2 = ImageFont.truetype('SankiMusic/resource/font2.ttf', 70)
+            font3 = ImageFont.truetype('SankiMusic/resource/font2.ttf', 40)
+            font4 = ImageFont.truetype('SankiMusic/resource/font2.ttf', 35)
 
             image4 = ImageDraw.Draw(image2)
             image4.text((10, 10), "SHALINI X MUSIC", fill="blue", font = font1, align ="left") 
-            image4.text((670, 150), "NOW PLAYING By Shalu", fill="white", font = font2, stroke_width=2, stroke_fill="white", align ="left") 
+            image4.text((670, 150), "NOW PLAYING", fill="white", font = font2, stroke_width=2, stroke_fill="white", align ="left") 
 
             # title
             title1 = truncate(title)
@@ -196,7 +196,7 @@ async def gen_qthumb(videoid):
             background = enhancer.enhance(0.6)
             image2 = background
                                                                                             
-            circle = Image.open("AarohiX/assets/circle.png")
+            circle = Image.open("SankiMusic/resource/circle.png")
 
             # changing circle color
             im = circle
@@ -228,14 +228,14 @@ async def gen_qthumb(videoid):
             image2.paste(circle, (0,0), mask = circle)
 
             # fonts
-            font1 = ImageFont.truetype('AarohiX/assets/font.ttf', 30)
-            font2 = ImageFont.truetype('AarohiX/assets/font2.ttf', 70)
-            font3 = ImageFont.truetype('AarohiX/assets/font2.ttf', 40)
-            font4 = ImageFont.truetype('AarohiX/assets/font2.ttf', 35)
+            font1 = ImageFont.truetype('SankiMusic/resource/font.ttf', 30)
+            font2 = ImageFont.truetype('SankiMusic/resource/font2.ttf', 70)
+            font3 = ImageFont.truetype('SankiMusic/resource/font2.ttf', 40)
+            font4 = ImageFont.truetype('SankiMusic/resource/font2.ttf', 35)
 
             image4 = ImageDraw.Draw(image2)
             image4.text((10, 10), "SHALINI x MUSIC", fill="blue", font = font1, align ="left") 
-            image4.text((670, 150), "ADDED TO QUEUE BY SHALU", fill="white", font = font2, stroke_width=2, stroke_fill="white", align ="left") 
+            image4.text((670, 150), "ADDED TO QUEUE", fill="white", font = font2, stroke_width=2, stroke_fill="white", align ="left") 
 
             # title
             title1 = truncate(title)
