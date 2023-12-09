@@ -168,7 +168,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await Anony.join_call(
+            await Kaal.join_call(
                 chat_id,
                 original_chat_id,
                 file_path,
@@ -280,7 +280,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await Anony.join_call(chat_id, original_chat_id, file_path, video=status)
+            await Kaal.join_call(chat_id, original_chat_id, file_path, video=status)
             await put_queue(
                 chat_id,
                 original_chat_id,
