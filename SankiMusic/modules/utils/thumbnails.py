@@ -10,7 +10,7 @@ from PIL import (Image, ImageDraw, ImageEnhance, ImageFilter,
 from youtubesearchpython.__future__ import VideosSearch
 import numpy as np
 
-from config import YOUTUBE_IMG_URL
+from SankiMusic.utilities.config import YOUTUBE_IMG_URL
 
 
 def make_col():
